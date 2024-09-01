@@ -11,3 +11,5 @@ migration-force-1v:
 	
 	migrate -path ./migrations/postgres -database 'postgres://admin:admin@localhost:5432/rentcar?sslmode=disable' up 1 01_add_column.up
 
+swag-init:
+	swag init -g api/router.go -o api/docs
